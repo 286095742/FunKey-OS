@@ -1,4 +1,4 @@
-<layout width="240" height="240" font="OpenSans-Bold.ttf" loadFontSize="14" fontColor="FFFFFF">
+<layout width="480" height="480" font="OpenSans-Bold.ttf" loadFontSize="14" fontColor="FFFFFF">
 
 
     <sound type="load"      src="sounds/load.wav"/>
@@ -41,13 +41,13 @@
         <!-- itemDefaults allow you to set default attributes for all items in a menu list An item may still have its own attributes that override the defaults -->
         <!-- Notice that xOffset and yOffset are set to center. This puts a pin in the very center of the image(or item). Normally it is in the top left corner of the image. From that pin we will put the coordinates of where we wish the image to be. In this case the the center of the screen x="center" and y="center". Now yOffset="58" moves the image 58 additional pixels towards the bottom. yOffset="-58" would move it 58 pixels towards the top -->
 
-        <itemDefaults xOrigin="center" x="center" yOrigin="center" y="center" yOffset="0" width="140" spacing="10" alpha="0.8" loadFontSize="18" fontSize="18" layer="4"/>
+        <itemDefaults xOrigin="center" x="center" yOrigin="center" y="center" yOffset="0" width="280" spacing="20" alpha="0.8" loadFontSize="18" fontSize="18" layer="4"/>
 
         <!-- In this menu each item is placed. notice that the first and last item of this menu are alpha="0" if this is not done you would see the last time of the menu move to be the first when scrolling. -->
 
-        <item xOffset="-240" alpha="0"/>
+        <item xOffset="-480" alpha="0"/>
 
-        <item xOffset="-170">
+        <item xOffset="-340">
             <onMenuEnter menuIndex="0">
                 <set duration=".4">
                     <animate type="alpha" to="0.8" algorithm="easeincircular"/>
@@ -92,7 +92,7 @@
             <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
         </item>
 
-        <item xOffset="240" alpha="0"/>
+        <item xOffset="480" alpha="0"/>
     </menu>
 
     <!--Collection title-->
@@ -159,18 +159,10 @@
             <onEnter>                   <set duration=".00001"><animate type="alpha" to="0"/></set></onExit>
         </itemDefaults>
 
-        <item yOffset="-60" alpha="0"/>
+        <item yOffset="-120" alpha="0"/>
 
         <item yOffset="0" selected="true">
             <onExit>                   <set duration=".3"><animate type="alpha" to="0" algorithm="easeincubic"/></set></onExit>
-            <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
-            <onMenuExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onMenuExit>
-            <onGameEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onGameEnter>
-            <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onGameEnter>
-        </item>
-
-        <item yOffset="60">
-            <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onMenuExit>
             <onGameEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onGameEnter>
@@ -185,7 +177,7 @@
             <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onGameEnter>
         </item>
 
-        <item yOffset="180">
+        <item yOffset="240">
             <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
             <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
             <onMenuExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onMenuExit>
@@ -193,7 +185,15 @@
             <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onGameEnter>
         </item>
 
-        <item yOffset="240" alpha="0"/>
+        <item yOffset="360">
+            <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
+            <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
+            <onMenuExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onMenuExit>
+            <onGameEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onGameEnter>
+            <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onGameEnter>
+        </item>
+
+        <item yOffset="480" alpha="0"/>
     </menu>
 
 
@@ -570,7 +570,7 @@
 
 
     <!--Separation bar between 2 and 3-->
-    <image src="images/gray_1px.png" x="left" xOrigin="left" xOffset="0" width="stretch" height="1" y="24" yOrigin="top" yOffset="240" alpha="0" layer="15">
+    <image src="images/gray_1px.png" x="left" xOrigin="left" xOffset="0" width="stretch" height="1" y="24" yOrigin="top" yOffset="480" alpha="0" layer="15">
 	    <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
         <onMenuExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onMenuExit>
@@ -578,17 +578,17 @@
         <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></oneGameExit>
         <onHighlightExit menuIndex="1">
         	<set duration=".00001">
-        		<animate type="yOffset" from="240" to="240" algorithm="easeinquadratic"/>
+        		<animate type="yOffset" from="480" to="480" algorithm="easeinquadratic"/>
         	</set>
         </onHighlightExit>
         <onMenuScroll menuIndex="1">
             <set duration="0">
-                <animate type="yoffsetshiftmenudirection" from="240" to="60" algorithm="easeinquadratic"/>
+                <animate type="yoffsetshiftmenudirection" from="480" to="120" algorithm="easeinquadratic"/>
             </set>
         </onMenuScroll>
         <onMenuFastScroll menuIndex="1">
             <set duration="0">
-                <animate type="yoffsetshiftmenudirection" from="240" to="60" algorithm="easeinquadratic"/>
+                <animate type="yoffsetshiftmenudirection" from="480" to="120" algorithm="easeinquadratic"/>
             </set>
         </onMenuFastScroll>
     </image>
@@ -600,7 +600,7 @@
 
 
     <!--Game cover idx 4 -->
-	<reloadableText type="title" selectedOffset="4" alpha="0" x="70" xOrigin="left" xOffset="0" y="54" yOrigin="center" yOffset="240" width="stretch" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="14" >
+	<reloadableText type="title" selectedOffset="4" alpha="0" x="70" xOrigin="left" xOffset="0" y="54" yOrigin="center" yOffset="480" width="stretch" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="14" >
 	    <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
         <onMenuExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onMenuExit>
@@ -608,17 +608,17 @@
         <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></oneGameExit>
         <onHighlightExit menuIndex="1">
         	<set duration=".00001">
-        		<animate type="yOffset" from="240" to="240" algorithm="easeinquadratic"/>
+        		<animate type="yOffset" from="480" to="480" algorithm="easeinquadratic"/>
         	</set>
         </onHighlightExit>
         <onMenuScroll menuIndex="1">
             <set duration="0">
-                <animate type="yoffsetshiftmenudirection" from="240" to="60" algorithm="easeinquadratic"/>
+                <animate type="yoffsetshiftmenudirection" from="480" to="120" algorithm="easeinquadratic"/>
             </set>
         </onMenuScroll>
         <onMenuFastScroll menuIndex="1">
             <set duration="0">
-                <animate type="yoffsetshiftmenudirection" from="240" to="60" algorithm="easeinquadratic"/>
+                <animate type="yoffsetshiftmenudirection" from="480" to="120" algorithm="easeinquadratic"/>
             </set>
         </onMenuFastScroll>
     </reloadableText>

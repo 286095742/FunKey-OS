@@ -1,4 +1,4 @@
-<layout width="240" height="240" font="Cabin-Bold-TTF.ttf" loadFontSize="14" fontColor="FFFFFFF">
+<layout width="480" height="480" font="Cabin-Bold-TTF.ttf" loadFontSize="14" fontColor="FFFFFFF">
 
 
     <sound type="load"      src="sounds/load.wav"/>
@@ -111,31 +111,31 @@
         <!-- itemDefaults allow you to set default attributes for all items in a menu list An item may still have its own attributes that override the defaults -->
         <!-- Notice that xOffset and yOffset are set to center. This puts a pin in the very center of the image(or item). Normally it is in the top left corner of the image. From that pin we will put the coordinates of where we wish the image to be. In this case the the center of the screen x="center" and y="center". Now yOffset="58" moves the image 58 additional pixels towards the bottom. yOffset="-58" would move it 58 pixels towards the top -->
 
-        <itemDefaults x="center" y="center" yOrigin="center" xOrigin="center" maxWidth="240" height="20" spacing="10" yOffset="0" alpha="0.5" fontSize="18" loadFontSize="18" fontColor="4b4f4d" textFallback="true" layer="6"/>
+        <itemDefaults x="center" y="center" yOrigin="center" xOrigin="center" maxWidth="480" height="40" spacing="20" yOffset="0" alpha="0.5" fontSize="18" loadFontSize="18" fontColor="4b4f4d" textFallback="true" layer="6"/>
 
         <!-- In this menu each item is placed. notice that the first and last item of this menu are alpha="0" if this is not done you would see the last time of the menu move to be the first when scrolling. -->
 
-        <item xOffset="-240" alpha="0"/>
+        <item xOffset="-480" alpha="0"/>
 
         <!-- This is the Selected item of the menu we override the width and alpha here to make it more clear that it is indeed selected  -->
         <!-- we also have animations inplace so that this logo stays visable and moves to another location when entering the sub menu -->
-        <item selected="true" layer="7" alpha="1">
+        <item selected="true" layer="14" alpha="1">
             <onExit><set duration=".2"><animate type="alpha" to="0" algorithm="easeinquadratic"/></set></onExit>
             <onMenuExit menuIndex="0">
                 <set duration=".2">
-                    <animate type="yOffset" from="0" to="-104" algorithm="easeinquadratic"/>
+                    <animate type="yOffset" from="0" to="-208" algorithm="easeinquadratic"/>
                 </set>
             </onMenuExit>
             <onMenuEnter menuIndex="0">
                 <set duration=".2">
-                    <animate type="yOffset" from="-104" to="0" algorithm="easeinquadratic"/>
+                    <animate type="yOffset" from="-208" to="0" algorithm="easeinquadratic"/>
                 </set>
             </onMenuEnter>
             <onGameEnter menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onGameEnter>
             <onGameExit  menuIndex="1"><set duration=".1"><animate type="alpha" to="1"/></set></onGameEnter>
         </item>
 
-        <item xOffset="240" alpha="0"/>
+        <item xOffset="480" alpha="0"/>
     </menu>
 
 
@@ -208,7 +208,7 @@
 
 
 
-    <reloadableImage type="artwork_front" selectedOffset="0" alpha="0" x="center" xOrigin="center" xOffset="0" y="center" yOrigin="center" yOffset="0" height="240"  maxWidth="240" textFallback="false" imageFallback="false" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="3" >
+    <reloadableImage type="artwork_front" selectedOffset="0" alpha="0" x="center" xOrigin="center" xOffset="0" y="center" yOrigin="center" yOffset="0" height="480"  maxWidth="480" textFallback="false" imageFallback="false" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="3" >
         <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
         <onMenuExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/></set></onMenuExit>

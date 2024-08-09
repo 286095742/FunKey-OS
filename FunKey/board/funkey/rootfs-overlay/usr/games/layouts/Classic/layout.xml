@@ -1,4 +1,4 @@
-<layout width="240" height="240" font="Roboto-Bold.ttf" loadFontSize="14" fontColor="FFFFFFF">
+<layout width="480" height="480" font="Roboto-Bold.ttf" loadFontSize="14" fontColor="FFFFFFF">
 
 
     <sound type="load"      src="sounds/load.wav"/>
@@ -273,7 +273,7 @@
         </onHighlightExit>
         <onMenuScroll menuIndex="1">
             <set duration="0">
-                <animate type="xoffsetshiftmenudirection" from="0" to="240" algorithm="easeinquadratic"/>
+                <animate type="xoffsetshiftmenudirection" from="0" to="480" algorithm="easeinquadratic"/>
             </set>
         </onMenuScroll>
         <onMenuScrollNext menuIndex="1">
@@ -288,7 +288,7 @@
         </onMenuScrollPrev>
         <onMenuFastScroll menuIndex="1">
             <set duration="0">
-                <animate type="xoffsetshiftmenudirection" from="0" to="240" algorithm="easeinquadratic"/>
+                <animate type="xoffsetshiftmenudirection" from="0" to="480" algorithm="easeinquadratic"/>
             </set>
         </onMenuFastScroll>
     </reloadableText>
@@ -327,7 +327,7 @@
 
 
     <!--Game cover idx -1 -->
-    <reloadableText type="title" selectedOffset="-1" alpha="0" x="center" xOrigin="center" xOffset="-240" y="bottom" yOrigin="center" yOffset="-20" width="220" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="14" >
+    <reloadableText type="title" selectedOffset="-1" alpha="0" x="center" xOrigin="center" xOffset="-480" y="bottom" yOrigin="center" yOffset="-40" width="440" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="14" >
         
         <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
@@ -336,17 +336,17 @@
         <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></oneGameExit>
         <onHighlightExit menuIndex="1">
             <set duration=".00001">
-                <animate type="xOffset" from="-240" to="-240" algorithm="easeinquadratic"/>
+                <animate type="xOffset" from="-480" to="-480" algorithm="easeinquadratic"/>
             </set>
         </onHighlightExit>
         <onMenuScroll menuIndex="1">
             <set duration="0">
-                <animate type="xoffsetshiftmenudirection" from="-240" to="240" algorithm="easeinquadratic"/>
+                <animate type="xoffsetshiftmenudirection" from="-480" to="480" algorithm="easeinquadratic"/>
             </set>
         </onMenuScroll>
         <onMenuFastScroll menuIndex="1">
             <set duration="0">
-                <animate type="xoffsetshiftmenudirection" from="-240" to="240" algorithm="easeinquadratic"/>
+                <animate type="xoffsetshiftmenudirection" from="-480" to="480" algorithm="easeinquadratic"/>
             </set>
         </onMenuFastScroll>
     </reloadableText>
@@ -356,7 +356,7 @@
 
 
     <!--Game cover idx 1 -->
-    <reloadableText type="title" selectedOffset="1" alpha="0" x="center" xOrigin="center" xOffset="240" y="bottom" yOrigin="center" yOffset="-20" width="220" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="14" >
+    <reloadableText type="title" selectedOffset="1" alpha="0" x="center" xOrigin="center" xOffset="480" y="bottom" yOrigin="center" yOffset="-40" width="440" menuScrollReload="true" fontSize="14" loadFontSize="14" fontColor="4b4f4d" layer="14" >
         
         <onExit>                   <set duration=".3"><animate type="alpha" to="0"/></set></onExit>
         <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
@@ -365,17 +365,17 @@
         <onGameExit  menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></oneGameExit>
         <onHighlightExit menuIndex="1">
             <set duration=".00001">
-                <animate type="xOffset" from="240" to="240" algorithm="easeinquadratic"/>
+                <animate type="xOffset" from="480" to="480" algorithm="easeinquadratic"/>
             </set>
         </onHighlightExit>
         <onMenuScroll menuIndex="1">
             <set duration="0">
-                <animate type="xoffsetshiftmenudirection" from="240" to="240" algorithm="easeinquadratic"/>
+                <animate type="xoffsetshiftmenudirection" from="480" to="480" algorithm="easeinquadratic"/>
             </set>
         </onMenuScroll>
         <onMenuFastScroll menuIndex="1">
             <set duration="0">
-                <animate type="xoffsetshiftmenudirection" from="240" to="240" algorithm="easeinquadratic"/>
+                <animate type="xoffsetshiftmenudirection" from="480" to="480" algorithm="easeinquadratic"/>
             </set>
         </onMenuFastScroll>
     </reloadableText>

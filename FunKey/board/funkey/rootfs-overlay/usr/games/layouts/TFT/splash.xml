@@ -1,5 +1,5 @@
-<layout width="240" height="240" font="Roboto-Bold.ttf" loadFontSize="18" fontColor="FFFFFFF">
-<!-- <layout width="240" height="240" font="Roboto-Bold.ttf" loadFontSize="18" fontColor="FFFFFFF" minShowTime="2"> -->
+<layout width="480" height="480" font="Roboto-Bold.ttf" loadFontSize="18" fontColor="FFFFFFF">
+<!-- <layout width="480" height="480" font="Roboto-Bold.ttf" loadFontSize="18" fontColor="FFFFFFF" minShowTime="2"> -->
    
 
     <!--backgroundImage-->
